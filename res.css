@@ -1,0 +1,439 @@
+/* Whole Body */
+body {
+    color: #797979;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2, h3, h4,h5, h6 {
+    color: #414141;
+}
+
+a {
+    color: #313131;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #EF233C;
+    outline: none;
+    text-decoration: none;
+}
+
+
+.container-fluid {
+    max-width: 1500px;
+}
+
+
+.btn{
+    margin-top: 500px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+  }
+  .button-3 {
+    background-color: lightgreen;
+    color: #313131;
+    padding: 100px;
+    font-weight: 900;
+  }
+
+
+#loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    -o-transition: opacity .3s ease-out, visibility 0s linear .3s;
+    transition: opacity .3s ease-out, visibility 0s linear .3s;
+    z-index: 999;
+}
+
+#loader.show {
+    -webkit-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    -o-transition: opacity .6s ease-out, visibility 0s linear 0s;
+    transition: opacity .6s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+#loader .loader {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: 5px solid #dddddd;
+    border-top: 5px solid #EF233C;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+/*Navigation*/
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: .5s;
+    
+}
+
+.navbar .navbar-brand img {
+    max-width: 90%;
+    max-height: 100px;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: black;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        padding: 30px 60px;
+        background: transparent !important;
+        border-bottom: 1px dashed rgba(256, 256, 256, .2);
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #ffffff !important;
+    }
+    
+    .navbar .navbar-brand {
+        color: black;
+    }
+    
+    .navbar.nav-sticky .navbar-brand {
+        color: blue;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link:focus {
+        padding: 10px 10px 8px 10px;
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link,
+    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+        color: #414141;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: darkviolet;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+        color: lightcoral;
+    }
+}
+
+/*Main */
+.mainbod {
+    position: relative;
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 120px 0 0 0;
+    overflow: hidden;
+    background: lightskyblue;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230418/pngtree-clouds-sky-blue-aesthetic-pastel-image_2403934.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainbod .container-fluid {
+    padding: 0;
+}
+
+.mainbod .mainbod-image {
+    position: relative;
+    text-align: right;
+    padding-right: 75px;
+}
+
+.mainbod .mainbod-image img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.mainbod .mainbod-content {
+    position: relative;
+    padding-left: 75px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainbod .mainbod-text p {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.mainbod .mainbod-text h1 {
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.mainbod .mainbod-text h2 {
+    display: inline-block;
+    margin: 0;
+    height: 35px;
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.mainbod .mainbod-text .typed-text {
+    display: none;
+}
+
+.mainbod .mainbod-text .typed-cursor {
+    font-size: 35px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.mainbod .mainbod-btn .btn {
+    margin-top: 35px;
+    color: blue;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.mainbod .mainbod-btn .btn:hover {
+    color: #ffffff;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
+}
+
+.mainbod .mainbod-btn .btn:first-child {
+    margin-right: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .mainbod {
+        padding-top: 60px;
+    }
+    
+    .mainbod .mainbod-content {
+        padding: 0 15px;
+    }
+    
+    .mainbod .mainbod-text p {
+        font-size: 20px;
+    }
+    
+    .mainbod .mainbod-text h1 {
+        font-size: 45px;
+    }
+    
+    .mainbod .mainbod-text h2 {
+        font-size: 25px;
+        height: 25px;
+    }
+    
+    .mainbod .mainbod-btn .btn {
+        padding: 12px 30px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mainbod {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .mainbod,
+    .mainbod .mainbod-text,
+    .mainbod .mainbod-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mainbod .mainbod-text p {
+        font-size: 18px;
+    }
+    
+    .mainbod .mainbod-text h1 {
+        font-size: 35px;
+    }
+    
+    .mainbod .mainbod-text h2 {
+        font-size: 22px;
+        height: 22px;
+    }
+    
+    .mainbod .mainbod-btn .btn {
+        padding: 10px 15px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .mainbod .mainbod-text p {
+        font-size: 16px;
+    }
+    
+    .mainbod .mainbod-text h1 {
+        font-size: 30px;
+    }
+    
+    .mainbod .mainbod-text h2 {
+        font-size: 18px;
+        height: 18px;
+    }
+    
+    .mainbod .mainbod-btn .btn {
+        padding: 8px 10px;
+        letter-spacing: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    position: relative;
+    margin-top: 45px;
+    background: blanchedalmond;
+}
+
+.footer .container-fluid {
+    padding: 60px 0 0 0;
+}
+
+.footer .footer-info {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.footer .footer-info h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer .footer-info h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer .footer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-menu p {
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0 15px;
+    border-right: 1px solid #ffffff;
+}
+
+.footer .footer-menu p:last-child {
+    border: none;
+}
+
+.footer .footer-social {
+    position: relative;
+    margin-top: 15px;
+}
+
+.footer .footer-social a {
+    display: inline-block;
+}
+
+.footer .footer-social a i {
+    margin-right: 15px;
+    font-size: 20px;
+    color: blue;
+    transition: .3s;
+}
+
+
+
+.footer .footer-social a:hover i {
+    color: #414141;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
