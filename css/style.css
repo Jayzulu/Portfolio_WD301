@@ -21,8 +21,24 @@ a:focus {
     outline: none;
     text-decoration: none;
 }
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
 
-.btn:focus,
+
 .form-control:focus {
     box-shadow: none;
 }
@@ -239,23 +255,9 @@ a:focus {
     color: #ffffff;
 }
 
-.mainbod .mainbod-btn .btn {
-    margin-top: 35px;
-    color: blue;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-}
 
-.mainbod .mainbod-btn .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
-}
 
-.mainbod .mainbod-btn .btn:first-child {
-    margin-right: 10px;
-}
+
 
 @media (max-width: 991.98px) {
     .mainbod {
@@ -279,10 +281,7 @@ a:focus {
         height: 25px;
     }
     
-    .mainbod .mainbod-btn .btn {
-        padding: 12px 30px;
-        letter-spacing: 1px;
-    }
+    
 }
 
 @media (max-width: 1000px) {
@@ -293,10 +292,7 @@ a:focus {
     
     .mainbod,
     .mainbod .mainbod-text,
-    .mainbod .mainbod-btn {
-        width: 100%;
-        text-align: center;
-    }
+  
     
     .mainbod .mainbod-text p {
         font-size: 18px;
@@ -311,10 +307,7 @@ a:focus {
         height: 22px;
     }
     
-    .mainbod .mainbod-btn .btn {
-        padding: 10px 15px;
-        letter-spacing: 1px;
-    }
+
 }
 
 @media (max-width: 575.98px) {
@@ -331,10 +324,7 @@ a:focus {
         height: 18px;
     }
     
-    .mainbod .mainbod-btn .btn {
-        padding: 8px 10px;
-        letter-spacing: 0;
-    }
+ 
 }
 
 
@@ -407,9 +397,7 @@ a:focus {
     transition: 2s;
 }
 
-.about .about-text a.btn {
-    margin-top: 15px;
-}
+
 
 @media (max-width: 991.98px) {
     .about .about-content {
@@ -433,10 +421,7 @@ a:focus {
     font-family: Arial;
   }
 
-  .main {
-    max-width: 1000px;
-    margin: auto;
-  }
+
   
   h1 {
     font-size: 50px;
@@ -447,6 +432,17 @@ a:focus {
     margin: 8px -16px;
   }
   
+  .zoom-image {
+    cursor: zoom-in; /* Change cursor to zoom icon on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom animation */
+    width: 200px; /* Set initial image width (optional) */
+    height: 200px; /* Set initial image height (optional) */
+  }
+  
+  .zoom-image:hover,
+  .zoom-image:active {  /* Include :active pseudo-class for click */
+    transform: scale(1.5); /* Zoom in on hover and click */
+  }
   /* Add padding BETWEEN each column (if you want) */
   .row,
   .row > .column {
@@ -472,7 +468,6 @@ a:focus {
     color: #313131;
   }
   
- 
  
 
 
@@ -543,7 +538,6 @@ a:focus {
 }
 
 
-
 .footer .footer-social a:hover i {
     color: #414141;
 }
@@ -554,5 +548,4 @@ a:focus {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 
