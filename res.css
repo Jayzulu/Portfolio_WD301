@@ -28,20 +28,27 @@ a:focus {
 }
 
 
-.btn{
-    margin-top: 500px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.download-container {
+  text-align: center; /* Center the button horizontally */
+  margin: 20px auto; /* Add some margin for spacing */
+}
 
-  }
-  .button-3 {
-    background-color: lightgreen;
-    color: #313131;
-    padding: 100px;
-    font-weight: 900;
-  }
+.download-button {
+  display: inline-block; /* Allow text wrapping within the button */
+  padding: 10px 20px; /* Add padding for better spacing */
+  border: none; /* Remove default button border */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #3498db; /* Set a blue background color */
+  color: white; /* Set white text color */
+  font-weight: bold; /* Make the text bold for emphasis */
+  text-decoration: none; /* Remove underline from anchor tag */
+  cursor: pointer; /* Indicate clickable behavior on hover */
+}
+
+.download-button:hover {
+  background-color: #2980b9; /* Change background color on hover */
+}
+
 
 
 #loader {
