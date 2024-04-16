@@ -38,6 +38,24 @@ a:focus {
     background-color: #2980b9;
   }
 
+  .btn9 {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: grey;
+    color: bisque;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn9:hover {
+    background-color: beige;
+  }
+
+
 
 .form-control:focus {
     box-shadow: none;
